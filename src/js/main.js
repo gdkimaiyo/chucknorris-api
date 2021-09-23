@@ -2,8 +2,10 @@ let URL = 'https://api.chucknorris.io/jokes/random';
 
 const getRamdomJoke = async () => {
   try {
+    document.getElementById('spinner').style.display = 'block';
     const response = await axios.get(URL);
     console.log(response.data);
+    document.getElementById('spinner').style.display = 'none';
     refreshJoke();
     updateJoke(response.data.value);
   } catch (error) {
