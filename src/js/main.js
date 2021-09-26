@@ -59,6 +59,12 @@ const changeCategory = () => {
   }
 }
 
+// next joke button
+const nextJoke = evnt => {
+  evnt.preventDefault();
+  refreshJoke();
+  getRamdomJoke();
+}
 
 const updateJoke = joke => {
   document.getElementById('joke').textContent = joke;
