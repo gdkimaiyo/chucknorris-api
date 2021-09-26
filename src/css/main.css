@@ -67,10 +67,24 @@ body {
   background-color: rgba(221, 62, 141);
 }
 
+.footer {
+  margin: 36px 12px;
+}
+.blockquote {
+  font-size: 16px;
+  margin: 12px;
+}
+.blockquote-footer {
+  font-size: 14px;
+}
+
 /* Mobile VIEW CSS */
 @media screen and (max-width: 500px) {
   body {
     width: 100%;
+  }
+  .footer {
+    margin: 36px 0;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 500px) {
