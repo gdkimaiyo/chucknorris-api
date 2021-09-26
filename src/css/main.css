@@ -15,7 +15,57 @@ body {
   display: block;
 }
 
+.form-select {
+  width: 25%;
+  margin: 12px;
+  background-color: #e9ecef;
+}
 
+.joke-div {
+  position: relative;
+  box-sizing: border-box;
+  margin: 12px;
+  margin-top: 24px;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: 'tnum';
+  outline: 0;
+  background: #fafafa;
+  border: 1px dashed #000000;
+  border-radius: 2px;
+  transition: border-color 0.3s;
+}
+.joke-div:hover {
+  border: 1px dashed #40a9ff;
+}
+.category {
+  color: rgba(26, 20, 20, 0.45);
+  font-size: 16px;
+}
+#category-name {
+  font-weight: bold;
+}
+.joke {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+.next-btn {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 12px;
+  line-height: 1.5;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  border: 1px solid transparent;
+  border-color: rgba(221, 62, 141);
+  background-color: rgba(221, 62, 141);
+}
 
 /* Mobile VIEW CSS */
 @media screen and (max-width: 500px) {
