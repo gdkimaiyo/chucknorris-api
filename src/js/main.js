@@ -12,6 +12,7 @@ const getRamdomJoke = async () => {
     console.error(error);
   }
 }
+
 const getCategories = async () => {
   try {
     const response = await axios.get(CATEGORIES);
@@ -79,6 +80,7 @@ const capitalizeTxt = txt => {
   // If you want lowercase the rest txt.slice(1).toLowerCase();
   return txt.charAt(0).toUpperCase() + txt.slice(1);
 }
+
 const removeAllChildNodes = parent => {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
